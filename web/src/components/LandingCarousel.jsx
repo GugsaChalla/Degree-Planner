@@ -1,7 +1,9 @@
 import React from 'react'
-import stock1 from '../img/stock1.jpg'
-import stock2 from '../img/stock2.jpeg'
-import stock3 from '../img/stock3.jpg'
+import tree from '../img/tree.jpg';
+import dept from '../img/dept.jpg';
+import course from '../img/course.jpg';
+import details from '../img/details.jpg';
+
 import './css/LandingCarousel.css'
 
 
@@ -13,30 +15,35 @@ export default function LandingCarousel() {
                     <li data-target="#carouselCaptions" data-slide-to="0" className="active"></li>
                     <li data-target="#carouselCaptions" data-slide-to="1"></li>
                     <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselCaptions" data-slide-to="3"></li>
                 </ol>
 
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={stock1} className="d-block w-100" alt="carousel 1"/>
+                        <img src={tree} className="d-block w-100" alt="carousel 1"/>
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Lorem ipsum blah blah blah blah</p>
+                            <h5>Visualize your degree!</h5>
                         </div>
                     </div>
 
                     <div className="carousel-item">
-                        <img src={stock2} className="d-block w-100" alt="carousel 2"/>
+                        <img src={dept} className="d-block w-100" alt="carousel 2"/>
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum blah blah blah blah</p>
+                            <h5>Explore courses from any department</h5>
                         </div>
                     </div>
 
                     <div className="carousel-item">
-                        <img src={stock3} className="d-block w-100" alt="carousel 3"/>
+                        <img src={course} className="d-block w-100" alt="carousel 3"/>
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Lorem ipsum blah blah blah blah</p>
+                            <h5>Manage your courses and plan ahead</h5>
+                        </div>
+                    </div>
+
+                    <div className="carousel-item">
+                        <img src={details} className="d-block w-100" alt="carousel 4"/>
+                        <div className="carousel-caption d-none d-md-block">
+                            <h5>Navigate through courses and prerequisites</h5>
                         </div>
                     </div>
 
